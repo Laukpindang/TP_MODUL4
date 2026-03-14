@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using TP_MODUL4_103022400053;
+
+Console.WriteLine("Batununggal: " + KodePos.getKodePos("Batununggal"));
