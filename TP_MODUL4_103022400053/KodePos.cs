@@ -6,23 +6,14 @@
         {
             string[] listKelurahan = { "Batununggal", "Kujangsari", "Mengger", "Wates", "Cijaura", "Jatisari", "Margasari", "Sekejati", "Kebonwaru", "Maleer" };
             string[] kodepos = { "40266", "40287", "40267", "40256", "40287", "40286", "40286", "40286", "40272", "40274" };
-            int maxIdx = kodepos.Length - 1;
-
-            string current = "40274";
-            int level = 0;
-
-            while ((current == "40274") && (level <= maxIdx))
+            for (int i = 0; i < listKelurahan.Length; i++)
             {
-                if (kelurahan == kodepos[level])
+                if (listKelurahan[i] == kelurahan)
                 {
-                    current = kodepos[level];
-                }
-                else
-                {
-                    level++;
+                    return kodepos[i];
                 }
             }
-            return current;
+            return "tidak ditemukan";
         }
     }
 }
